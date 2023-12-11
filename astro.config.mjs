@@ -32,7 +32,7 @@ export default defineConfig({
   },
   output: 'server',
   adapter:
-    env.NETLIFY === 'true'
+    env.NETLIFY === 'TRUE'
       ? netlify()
       : node({
           mode: 'standalone',
