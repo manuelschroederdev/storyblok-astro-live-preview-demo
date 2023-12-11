@@ -31,10 +31,5 @@ export default defineConfig({
     },
   },
   output: 'server',
-  adapter:
-    env.NETLIFY === 'TRUE'
-      ? netlify()
-      : node({
-          mode: 'standalone',
-        }),
+  adapter: netlify(),
 })
